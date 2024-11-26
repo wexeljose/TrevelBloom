@@ -7,21 +7,74 @@
     <title>About Us - TravelBloom</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header id="header">
+        <nav id="navHeader">
+            <div id="headerImage">
+                <img src="images/logo.png" alt="TravelBloom Logo" id="logo">
+                <p>TravelBloom</p>
+            </div>
+            <ul id="headerList">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li class="search">
+                    <input type="text" id="search-bar" placeholder="Enter a keyword (e.g., beach, temple)">
+                    <button id="search-button">Search</button>
+                </li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>About TravelBloom</h1>
-        <p>TravelBloom is your trusted partner in exploring the world. Our platform is dedicated to providing the best travel recommendations and resources for every adventurer.</p>
+        <section class="about">
+            <div class="about-content">
+                <h1>About TravelBloom</h1>
+                <p>TravelBloom is your trusted partner in exploring the world. Our platform provides top-notch travel recommendations and resources for adventurers seeking unforgettable experiences. We're dedicated to helping you plan your perfect trip and make memories that last a lifetime.</p>
+            </div>
+        </section>
+        
+        <section class="team">
+            <h2>Meet the Developer</h2>
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="images/jose.jpg" alt="José Wexel" class="profile-picture">
+                </div>
+                <div class="profile-info">
+                    <h3>José Wexel</h3>
+                    <p>I'm a passionate Full-Stack Developer and Project Manager dedicated to creating exceptional digital experiences. TravelBloom is the culmination of my love for technology and travel, and I'm excited to share it with the world. Feel free to connect with me on LinkedIn!</p>
+                    <a href="https://www.linkedin.com/in/josewexel/" target="_blank" class="linkedin-button" rel="noopener noreferrer">View LinkedIn Profile</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>Follow us on social media!</p>
+    
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="TravelBloom Logo" id="footer-logo" style="width: 40px; height: 40px;">
+                <p>TravelBloom - Your Journey Starts Here</p>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h4>Connect with Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelBloom. All rights reserved.</p>
+            <p>Designed with ❤️ by Travel Enthusiasts.</p>
+        </div>
     </footer>
 </body>
 </html>

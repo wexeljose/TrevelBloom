@@ -4,49 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>TravelBloom - Home</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header id="header">
+        <nav id="navHeader">
+            <div id="headerImage">
+                <img src="images/logo.png" alt="TravelBloom Logo" id="logo">
+                <p>TravelBloom</p>
+            </div>
+            <ul id="headerList">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li class="search">
+                    <input type="text" id="search-bar" placeholder="Enter a keyword (e.g., beach, temple)">
+                    <button id="search-button">Search</button>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="intro">
-            <h1>Explore the World with TravelBloom</h1>
-            <p>Discover breathtaking destinations and immerse yourself in diverse cultures.</p>
-            <button onclick="alert('Booking feature coming soon!')">Book Now</button>
+            <div class="overlay">
+                <h1>Explore the World with TravelBloom</h1>
+                <p>Discover breathtaking destinations and immerse yourself in diverse cultures.</p>
+                <button onclick="alert('Booking feature coming soon!')">Book Now</button>
+            </div>
         </section>
+    
         <section class="recommendations">
-            <h2>Recommendations</h2>
-            <article>
-                <h3>Beaches</h3>
-                <img src="images/beach1.jpg" alt="Beach 1">
-                <img src="images/beach2.jpg" alt="Beach 2">
-            </article>
-            <article>
-                <h3>Temples</h3>
-                <img src="images/temple1.jpg" alt="Temple 1">
-                <img src="images/temple2.jpg" alt="Temple 2">
-            </article>
-            <article>
-                <h3>Countries</h3>
-                <img src="images/country1.jpg" alt="Country 1">
-                <img src="images/country2.jpg" alt="Country 2">
-            </article>
+            <h2>Our Top Picks for You</h2>
+            <div class="recommendation-cards">
+                <div class="card">
+                    <img src="images/beach1.jpeg" alt="Beach Paradise">
+                    <div class="card-content">
+                        <h3>Beach Paradise</h3>
+                        <p>Relax on pristine white sands and swim in crystal-clear waters.</p>
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/temple1.jpeg" alt="Historic Temples">
+                    <div class="card-content">
+                        <h3>Historic Temples</h3>
+                        <p>Discover the spiritual and architectural wonders of ancient temples.</p>
+                        <button>Discover</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/country1.jpg" alt="Vibrant Cities">
+                    <div class="card-content">
+                        <h3>Vibrant Cities</h3>
+                        <p>Experience the culture, food, and nightlife of bustling metropolises.</p>
+                        <button>Visit</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/mountains.jpeg" alt="Mountain Getaway">
+                    <div class="card-content">
+                        <h3>Mountain Getaway</h3>
+                        <p>Breathe fresh air and hike through breathtaking landscapes.</p>
+                        <button>Adventure</button>
+                    </div>
+                </div>
+            </div>
         </section>
+        
     </main>
-    <footer>
-        <p>Follow us on 
-            <a href="#">Facebook</a>, 
-            <a href="#">Instagram</a>, and 
-            <a href="#">Twitter</a>.
-        </p>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="TravelBloom Logo" id="footer-logo" style="width: 40px; height: 40px;">
+                <p>TravelBloom - Your Journey Starts Here</p>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h4>Connect with Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelBloom. All rights reserved.</p>
+            <p>Designed with ❤️ by Travel Enthusiasts.</p>
+        </div>
     </footer>
+    
 </body>
 </html>
