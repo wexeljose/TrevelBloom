@@ -7,25 +7,72 @@
     <title>Contact Us - TravelBloom</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header id="header">
+        <nav id="navHeader">
+            <div id="headerImage">
+                <img src="images/logo.png" alt="TravelBloom Logo" id="logo">
+                <p>TravelBloom</p>
+            </div>
+            <ul id="headerList">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li class="search">
+                    <input type="text" id="search-bar" placeholder="Enter a keyword (e.g., beach, temple)">
+                    <button id="search-button">Search</button>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Contact Us</h1>
-        <form>
+
+<main id="contact-main">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Submit</button>
-        </form>
-    </main>
-    <footer>
-        <p>We'd love to hear from you!</p>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+        </div>
+        <button type="submit" id="submit-button">Send Message</button>
+    </form>
+</main>
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="TravelBloom Logo" id="footer-logo" style="width: 40px; height: 40px;">
+                <p>TravelBloom - Your Journey Starts Here</p>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h4>Connect with Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelBloom. All rights reserved.</p>
+            <p>Designed with ❤️ by Travel Enthusiasts.</p>
+        </div>
     </footer>
 </body>
 </html>
