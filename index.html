@@ -21,10 +21,14 @@
                 <li><a href="contact.html">Contact Us</a></li>
                 <li class="search">
                     <input type="text" id="search-bar" placeholder="Enter a keyword (e.g., beach, temple)">
-                    <button id="search-button">Search</button>
+                    <button id="search-button" onclick="searchRecommendations()">Search</button>
                 </li>
             </ul>
         </nav>
+        <section class="search-results" id="search-results" style="display: none;">
+            <h2>Search Results</h2>
+            <div class="result-cards"></div>
+        </section>   
     </header>
     <main>
         <section class="intro">
