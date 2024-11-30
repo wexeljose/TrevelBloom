@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="travel_recommendation/travel_recommendation.js"></script>
     <title>TravelBloom - Home</title>
 </head>
 <body>
@@ -20,10 +21,14 @@
                 <li><a href="contact.html">Contact Us</a></li>
                 <li class="search">
                     <input type="text" id="search-bar" placeholder="Enter a keyword (e.g., beach, temple)">
-                    <button id="search-button">Search</button>
+                    <button id="search-button" onclick="searchRecommendations()">Search</button>
                 </li>
             </ul>
         </nav>
+        <section class="search-results" id="search-results" style="display: none;">
+            <h2>Search Results</h2>
+            <div class="result-cards"></div>
+        </section>   
     </header>
     <main>
         <section class="intro">
